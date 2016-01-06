@@ -3,4 +3,12 @@
   <groupId>mx.com.ronin</groupId>
   <artifactId>spring-interprete</artifactId>
   <version>1.0</version>
+  
+  <developers>
+  	<developer>
+  		<name>Fredy Roman Vazquez Geronimo</name>
+  		<email>crazzy-rock@live.com.mx</email>	
+  	</developer>
+  </developers>
+  
 </project>
