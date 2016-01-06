@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- se dfine los beans y los cual equivale a la clases que implementa (new Class()) -->
+	 <bean id="interpreteSpanish" class="mx.com.beans.InterpreteSpanish" />
+	 <bean id="interpreteEnglish" class="mx.com.beans.InterpreteEnglish" />
+	 
+	 <bean id="traductorSpanish" class="mx.com.beans.Traductor" >
+	 	<property name="interprete" ref="interpreteSpanish" />
+	 	<property name="nombre" value="Fredy Vazquez"/>
+	 </bean>
+	 
+	 <bean id="traductorEnglish" class="mx.com.beans.Traductor" >
+	 	<property name="interprete" ref="interpreteEnglish" />
+	 	<property name="nombre" value="Roman Geronimo"/>
+	 </bean>
+
+</beans>
